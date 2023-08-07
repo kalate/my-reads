@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/* 
+  Table of books
+*/
+
+table {
+    margin-left: 50px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+th {
+    padding-bottom: 30px;
+}
+
+td {
+    padding-right: 80px;
+    padding-bottom: 20px;
+}
+
+td.book_cover img {
+    width: 60px;
+}
+
+td.pencil_icon {
+    text-align: center;
+    padding-right: 0;
+}
+
+td.pencil_icon img {
+    width: 20px;
+}

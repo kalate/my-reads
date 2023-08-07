@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title> myReads - book details </title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'books/books.css' %}">
+    <link rel="stylesheet" href="{% static 'books/detail.css' %}">
+</head>
+<body>
+    <h1> View/Edit Book Details </h1>
+    <form action="/book/update" method="post">
+        <h2>Title</h2>
+        <input
+            id="title"
+            type="text"
+            name="title_field"
+            value="{{ book.title }}" />
+    </form>
+</body>
+</html>

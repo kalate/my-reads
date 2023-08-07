@@ -1,0 +1,46 @@
+<!-- {% load static %}
+<link rel="stylesheet" href="{% static 'books/style.css' %}"> -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title> myReads - all books </title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'books/books.css' %}">
+    <link rel="stylesheet" href="{% static 'books/index.css' %}">
+</head>
+<body>
+    <h1>myReads</h1>
+    <table>
+        <colgroup>
+            <col/>
+            <col/>
+            <col class="rating_col"/>
+            <col/>
+        </colgroup>
+        <tr>
+            <th>Cover</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Rating</th>
+            <th>View/Edit</th>
+        </tr>
+        {% for book in book_list %}
+        <tr>
+            <td class="book_cover">
+                <img src="{{ MEDIA_URL }}/{{book.cover}}" alt="book cover">
+            </td>
+            <td>{{ book.title }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.rating }}/5</td>
+            <td class="pencil_icon"> 
+                <img src="{% static 'books/pencil.jpeg' %}" 
+                    alt="pencil icon">
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+
