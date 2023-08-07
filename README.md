@@ -1,5 +1,5 @@
 # my-reads
-A Goodreads-inspired website to keep track of one's reading (in-progress)
+A Goodreads-inspired website (in progress) to keep track of one's reading
 
 
 ### View of all added books
